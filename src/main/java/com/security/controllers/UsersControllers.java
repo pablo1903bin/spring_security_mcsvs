@@ -6,6 +6,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class UsersControllers {
+	
+	@GetMapping("/")
+	public ResponseEntity<?> rutaRaiz() {
+
+		return ResponseEntity.ok("ruta raiz");
+	}
 
 	@GetMapping("/index")
 	public ResponseEntity<?> raiz() {
